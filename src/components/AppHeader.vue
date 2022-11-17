@@ -1,0 +1,215 @@
+<script>
+export default {
+    name: 'AppHeader',
+    data() {
+        return {
+            navLinks: [
+                {
+                    name: 'Home',
+                    href: '/home'
+                },
+                {
+                    name: 'Order Online',
+                    href: '/order-online'
+                },
+                {
+                    name: 'About',
+                    href: '/about'
+                },
+                {
+                    name: 'News',
+                    href: '/news'
+                },
+                {
+                    name: 'Contact us',
+                    href: '/contact-us'
+                },
+                {
+                    name: 'cart',
+                    href: '/home'
+                },
+            ],
+        }
+    }
+}
+</script>
+
+<template>
+    <header>
+        <div class="container">
+
+            <!-- nav bar -->
+            <div class="ms_nav-bar pt-5 d-flex align-items-center justify-content-between">
+
+                <!-- logo -->
+                <div class="ms_logo">
+                    <a href="">
+                        <img src="../assets/takeout-logo.png" alt="">
+                    </a>
+                </div>
+
+                <!-- links -->
+                <nav class="ms_links ">
+                    <ul class="d-flex align-items-center ms_color-white fw-bold">
+                        <li class="ms-2" v-for="(item, i) in navLinks" :key="i"><a href="">{{ item.name }}</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- icons -->
+            <div class="icons p-1">
+                <div class="plus mb-5"> 
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="on-sale">
+                    <div class="square">
+                        <div class="square-inner">
+                            <i class="fa-solid fa-audio-description"></i>
+                            <p>Demos</p>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <div class="square-inner">
+                            <span>$</span>
+                            <span class="ms_fs-1 fw-bold">39</span>
+                            <p>On Sale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- container hungry delivery -->
+            <div class="hungry-ct ms_color-white">
+                <p class="ms_fs-3 fw-semibold">Hungry?</p>
+                <p class="ms_color-yellow ms_fs-5 fw-bold">Great Food</p>
+                <p class="ms_fs-5 fw-bold mb-2">Delivered</p>
+                <a href="#" class="btn"> view order menu <i class="ms-1 fa-solid fa-circle-arrow-right"></i></a>
+            </div>
+
+            <!-- nav links bottom  -->
+            <nav class="header-bottom d-flex justify-content-between">
+                <ul class="d-flex justify-content-between">
+                    <li>
+                        <a href="">
+                            <i class="fa-regular fa-clock me-1"></i>
+                            <p>24/7 DELIVERY</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-burger me-1"></i>
+                            <p>OVER 100 DISHES</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-mobile-screen-button me-1"></i>
+                            <p>IN APP ORDERING</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-car me-1"></i>
+                            <p>FAST DELIVERY</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+</template>
+
+<style lang="scss" scoped>
+header {
+    position: relative;
+
+    background-image: url('../assets//home-background-hero-scaled.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 1000px;
+
+    .ms_links li.active::after {
+        content: "";
+        border: solid #fcdc31;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        margin-left: 0.4rem;
+        transform: rotate(45deg);
+    }
+
+    .ms_links li.active {
+        color: #fcdc31;
+    }
+
+    .icons {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: white;
+
+        .plus {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            background-color: #cc1a26;
+        }
+
+        .square {
+            text-align: center;
+            width: 55px;
+            height: 55px;
+            border-radius: 5px;
+            color:#33475b;
+            background-color: white;
+            margin-bottom: 0.3rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-size: 0.7rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .hungry-ct {
+        margin-top: 11.5rem;
+    }
+
+    .header-bottom {
+        position: absolute;
+        bottom: -40px;
+
+        max-width: 1200px;
+        width: 80%;
+        height: 80px;
+        background-color: white;
+        padding: 1rem 3.5rem;
+
+        align-items: flex-end;
+
+        ul {
+            width: 100%;
+
+            a {
+                display: flex;
+            }
+
+            p {
+                color: rgb(85, 85, 85);
+                font-weight: bold;
+            }
+        }
+    }
+}
+</style>
