@@ -1,35 +1,8 @@
 <script>
 export default {
     name: 'AppHeader',
-    data() {
-        return {
-            navLinks: [
-                {
-                    name: 'Home',
-                    href: '/home'
-                },
-                {
-                    name: 'Order Online',
-                    href: '/order-online'
-                },
-                {
-                    name: 'About',
-                    href: '/about'
-                },
-                {
-                    name: 'News',
-                    href: '/news'
-                },
-                {
-                    name: 'Contact us',
-                    href: '/contact-us'
-                },
-                {
-                    name: 'cart',
-                    href: '/home'
-                },
-            ],
-        }
+    props: {
+        links: Object,
     }
 }
 </script>
@@ -51,7 +24,7 @@ export default {
                 <!-- links -->
                 <nav class="ms_links ">
                     <ul class="d-flex align-items-center ms_color-white fw-bold">
-                        <li class="ms-2" v-for="(item, i) in navLinks" :key="i"><a href="">{{ item.name }}</a></li>
+                        <li class="ms-2" v-for="(item, i) in links" :key="i"><a :href="item.href">{{ item.name }}</a></li>
                     </ul>
                 </nav>
             </div>
