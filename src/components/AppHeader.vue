@@ -70,8 +70,8 @@ export default {
                     </div>
                     <div class="square">
                         <div class="square-inner">
-                            <span>$</span>
-                            <span class="ms_fs-1 fw-bold">39</span>
+                            <span class="dollar ms_color-green ms-05">$</span>
+                            <span class="ms_fs-1 fw-bold ms_color-green ms-05">39</span>
                             <p>On Sale</p>
                         </div>
                     </div>
@@ -163,6 +163,7 @@ header {
         }
 
         .square {
+            position: relative;
             text-align: center;
             width: 55px;
             height: 55px;
@@ -177,6 +178,12 @@ header {
 
             p {
                 font-size: 0.7rem;
+                font-weight: bold;
+            }
+
+            .dollar {
+                position: absolute;
+                left: 5px;
                 font-weight: bold;
             }
         }
