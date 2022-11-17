@@ -1,12 +1,14 @@
 <script>
 import MostPopular from './MostPopular.vue';
 import MenuCategories from './MenuCategories.vue';
+import AppDownload from './AppDownload.vue';
 
 export default {
     name: 'AppMain',
     components: {
         MostPopular,
         MenuCategories,
+        AppDownload,
     }
 }
 </script>
@@ -15,6 +17,7 @@ export default {
     <main>
         <MostPopular />
         <MenuCategories />
+        <AppDownload />
     </main>
 </template>
 
