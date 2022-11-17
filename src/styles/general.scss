@@ -33,34 +33,50 @@ a {
 
 //buttons 
 .btn {
-    padding: 0.7rem 1.5rem;
+    padding: 0.7rem 1.3rem;
     border-radius: 20px;
     background-color: #cc1a26;
     color: white; 
-    font-size: 0.9rem;
-    letter-spacing: 0.2rem;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    display: inline-block;
+    font-weight: bold;
 }
 
 //colors
-.ms_color-yellow {
-    color: #fcdc31;
+
+.ms_color-white {
+    color: white;
 }
 
 .ms_color-red {
     color: #cc1a26;
 }
 
-.ms_color-white {
-    color: white;
+.ms_color-yellow {
+    color: #fcdc31;
+}
+
+.ms_color-brown {
+    color: #9d5114;
 }
 
 .ms_color-green {
     color:  #65bc7b;
 }
 
+.ms_color-dgreen {
+    color: #5ea331;
+}
+
 .ms_color-blue {
     color: #212934;
 }
+
+.ms_color-lblue {
+    color: #44a2ea;
+}
+
 
 //font sizes
 .ms_fs-05 {
@@ -211,6 +227,9 @@ a {
 }
 .mb-5 {
     margin-bottom: 5rem;
+}
+.mb-6 {
+    margin-bottom: 6rem;
 }
 
 .ms-05 {

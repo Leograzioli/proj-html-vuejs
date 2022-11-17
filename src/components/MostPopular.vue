@@ -52,9 +52,10 @@ export default {
             </div>
 
             <!-- button -->
-            <div class="text-center mb-5">
-                <a href="#" class="btn fw-semibold">SART YOUR ORDER <i
-                        class="ms-1 fa-solid fa-circle-arrow-right"></i></a>
+            <div class="text-center mb-6">
+                <a href="#" class="btn fw-semibold">
+                    SART YOUR ORDER <i class="ms-1 fa-solid fa-circle-arrow-right"></i>
+                </a>
             </div>
         </div>
 
@@ -118,7 +119,7 @@ export default {
 
     img {
         position: absolute;
-        top: -65px;
+        top: -95px;
     }
 
 }
