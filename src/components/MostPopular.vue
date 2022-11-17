@@ -50,17 +50,21 @@ export default {
                     </div>
                 </div>
             </div>
-            
+
             <!-- button -->
             <div class="text-center mb-5">
-                <a href="#" class="btn fw-semibold">SART YOUR ORDER <i class="ms-1 fa-solid fa-circle-arrow-right"></i></a>
+                <a href="#" class="btn fw-semibold">SART YOUR ORDER <i
+                        class="ms-1 fa-solid fa-circle-arrow-right"></i></a>
             </div>
         </div>
 
         <!-- bottom image -->
         <div class="ct-images">
-            <div class="blur">
+            <div class="bg-image">
                 <img src="../assets/svg-0.svg" alt="">
+                <img class="blur first" src="../assets/svg-0.svg" alt="">
+                <img class="blur second" src="../assets/svg-0.svg" alt="">
+                <img class="blur third" src="../assets/svg-0.svg" alt="">
             </div>
         </div>
     </section>
@@ -68,6 +72,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
+
     h2,
     p {
         text-align: center;
@@ -80,9 +85,9 @@ export default {
         column-gap: 30px;
 
         .col {
-            width: calc(100% / 3 );
+            width: calc(100% / 3);
         }
-    }   
+    }
 }
 
 .ct-images {
@@ -91,11 +96,30 @@ export default {
     background-size: cover;
     height: 530px;
 
+    .blur {
+        filter: opacity(0.1);
+
+    }
+    .first {
+        top: 45px;
+        transform: translate(-60px);
+    }
+
+    .second {
+        top: 05px;  
+        transform: translate(-10px);
+    }
+
+    .third {
+        top: -35px;
+        transform: translate(-30px);
+    }
+    
+
     img {
         position: absolute;
         top: -65px;
     }
 
 }
-
 </style>
