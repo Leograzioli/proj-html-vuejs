@@ -83,7 +83,7 @@ export default {
                 <p class="ms_fs-3 fw-semibold">Hungry?</p>
                 <p class="ms_color-yellow ms_fs-5 fw-bold">Great Food</p>
                 <p class="ms_fs-5 fw-bold mb-2">Delivered</p>
-                <a href="#" class="btn"> view order menu <i class="ms-1 fa-solid fa-circle-arrow-right"></i></a>
+                <a href="#" class="btn fw-semibold"> view our menu <i class="ms-1 fa-solid fa-circle-arrow-right"></i></a>
             </div>
 
             <!-- nav links bottom  -->

@@ -36,6 +36,9 @@ a {
     padding: 0.7rem 1.5rem;
     border-radius: 20px;
     background-color: #cc1a26;
+    color: white; 
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
 }
 
 //colors
@@ -55,7 +58,14 @@ a {
     color:  #65bc7b;
 }
 
+.ms_color-blue {
+    color: #212934;
+}
+
 //font sizes
+.ms_fs-05 {
+    font-size: 1.2rem;
+}
 .ms_fs-1 {
     font-size: 1.5rem;
 
@@ -246,4 +256,10 @@ a {
 
 .fw-semibold {
     font-weight: 600;
+}
+
+//text align 
+
+.text-center {
+    text-align: center;
 }
