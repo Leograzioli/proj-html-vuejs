@@ -12,36 +12,56 @@ export default {
             navLinks: [
                 {
                     name: 'Home',
-                    href: '/home'
+                    href: '/home',
+                    active: true,
+                    id: 1
                 },
                 {
                     name: 'Order Online',
-                    href: '/order-online'
+                    href: '/order-online',
+                    active: false,
+                    id: 2
                 },
                 {
                     name: 'About',
-                    href: '/about'
+                    href: '/about',
+                    active: false,
+                    id: 3
                 },
                 {
                     name: 'News',
-                    href: '/news'
+                    href: '/news',
+                    active: false,
+                    id: 4
                 },
                 {
                     name: 'Contact us',
-                    href: '/contact-us'
+                    href: '/contact-us',
+                    active: false,
+                    id: 5
                 },
                 {
                     name: 'cart',
-                    href: '/home'
-                },
+                    href: '/home',
+                    active: false,
+                    id: 6
+                }
             ],
         }
+    },
+    methods: {
+      handleClick (id) {
+        this.navLinks.forEach((item) => {
+          item.active = false;
+        })
+        this.navLinks[id - 1].active = true;
+      }
     }
 }
 </script>
 
 <template>
-  <AppHeader :links="navLinks" />
+  <AppHeader :links="navLinks" @clicked-link="handleClick" />
   <AppMain />
 </template>
 

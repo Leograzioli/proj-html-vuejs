@@ -24,7 +24,7 @@ export default {
                 <!-- links -->
                 <nav class="ms_links ">
                     <ul class="d-flex align-items-center ms_color-white fw-bold">
-                        <li class="ms-2" v-for="(item, i) in links" :key="i"><a :href="item.href">{{ item.name }}</a></li>
+                        <li class="ms-2" @click.prevent="$emit('clickedLink', item.id)" :class="item.active? 'active' : ''" v-for="(item, i) in links" :key="i"><a :href="item.href">{{ item.name }}</a></li>
                     </ul>
                 </nav>
             </div>
