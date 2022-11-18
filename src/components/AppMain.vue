@@ -2,6 +2,7 @@
 import MostPopular from './MostPopular.vue';
 import MenuCategories from './MenuCategories.vue';
 import AppDownload from './AppDownload.vue';
+import AppNews from './AppNews.vue';
 
 export default {
     name: 'AppMain',
@@ -9,6 +10,7 @@ export default {
         MostPopular,
         MenuCategories,
         AppDownload,
+        AppNews,
     }
 }
 </script>
@@ -18,6 +20,7 @@ export default {
         <MostPopular />
         <MenuCategories />
         <AppDownload />
+        <AppNews />
     </main>
 </template>
 
