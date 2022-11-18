@@ -26,61 +26,77 @@ export default {
                 <!-- col -->
                 <div class="col">
                     <div class="card">
-                        <img src="../assets/appetizers-menu-background.jpg" alt="appetizers image">
-                        <p>APPETIZERS</p>
+                        <a href="">
+                            <img src="../assets/appetizers-menu-background.jpg" alt="appetizers image">
+                            <p>APPETIZERS</p>
+                        </a>
                     </div>
                 </div>
 
                 <!-- col -->
                 <div class="col">
                     <div class="card">
-                        <img src="../assets/burgers-menu-background.jpg" alt="burger image">
-                        <p>BURGERS</p>
+                        <a href="">
+                            <img src="../assets/burgers-menu-background.jpg" alt="burger image">
+                            <p>BURGERS</p>
+                        </a>
                     </div>
                 </div>
 
                 <!-- col -->
                 <div class="col">
                     <div class="card">
-                        <img src="../assets/pizza-menu-background.jpg" alt="pizza image">
-                        <p>PIZZAS</p>
+                        <a href="">
+                            <img src="../assets/pizza-menu-background.jpg" alt="pizza image">
+                            <p>PIZZAS</p>
+                        </a>
                     </div>
                 </div>
 
                 <!-- col -->
                 <div class="col">
                     <div class="card">
-                        <img src="../assets/fries-menu-background.jpg" alt="fries image">
-                        <p>FRIES</p>
+                        <a href="">
+                            <img src="../assets/fries-menu-background.jpg" alt="fries image">
+                            <p>FRIES</p>
+                        </a>
                     </div>
                 </div>
 
                 <!-- col -->
                 <div class="col">
                     <div class="card">
-                        <img src="../assets/sides-menu-background.jpg" alt="sides image">
-                        <p>SIDES</p>
+                        <a href="">
+                            <img src="../assets/sides-menu-background.jpg" alt="sides image">
+                            <p>SIDES</p>
+                        </a>
                     </div>
                 </div>
                 <!-- col -->
                 <div class="col">
                     <div class="card">
-                        <img src="../assets/desserts-menu-background.jpg" alt="desserts image">
-                        <p>DESSERTS</p>
+                        <a href="">
+                            <img src="../assets/desserts-menu-background.jpg" alt="desserts image">
+                            <p>DESSERTS</p>
+                        </a>
                     </div>
                 </div>
                 <!-- col -->
                 <div class="col">
                     <div class="card">
-                        <img src="../assets/beverages-menu-background.jpg" alt="beverages image">
-                        <p>BEVERAGES</p>
+                        <a href="">
+                            <img src="../assets/beverages-menu-background.jpg" alt="beverages image">
+                            <p>BEVERAGES</p>
+                        </a>
                     </div>
                 </div>
                 <!-- col -->
                 <div class="col">
                     <div class="card">
-                        <img src="../assets/specials-menu-background.jpg" alt="specials image">
-                        <p>SPECIALS</p>
+                        <a href="">
+                            <img src="../assets/specials-menu-background.jpg" alt="specials image">
+                            <p>SPECIALS</p>
+                        </a>
                     </div>
                 </div>
 
@@ -88,8 +104,10 @@ export default {
                 <div class="col">
                     <div class="card-icon">
                         <div class="text-center">
-                            <i class="fa-solid fa-leaf fa-xl ms_color-dgreen"></i>
-                            <p>Vegetarian</p>
+                            <a href="">
+                                <i class="fa-solid fa-leaf fa-xl ms_color-dgreen"></i>
+                                <p>Vegetarian</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -98,8 +116,10 @@ export default {
                 <div class="col">
                     <div class="card-icon">
                         <div class="text-center">
-                            <i class="fa-solid fa-wheat-awn ms_color-yellow"></i>
-                            <p>Gluten Free</p>
+                            <a href="">
+                                <i class="fa-solid fa-wheat-awn ms_color-yellow"></i>
+                                <p>Gluten Free</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -108,8 +128,10 @@ export default {
                 <div class="col">
                     <div class="card-icon">
                         <div class="text-center">
-                            <i class="fa-solid fa-bottle-droplet ms_color-lblue"></i>
-                            <p>Dairy Free</p>
+                            <a href="">
+                                <i class="fa-solid fa-bottle-droplet ms_color-lblue"></i>
+                                <p>Dairy Free</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -118,8 +140,10 @@ export default {
                 <div class="col">
                     <div class="card-icon">
                         <div class="text-center">
-                            <i class="fa-solid fa-drumstick-bite ms_color-brown"></i>
-                            <p>Keto Friendly</p>
+                            <a href="">
+                                <i class="fa-solid fa-drumstick-bite ms_color-brown"></i>
+                                <p>Keto Friendly</p>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -105,6 +105,7 @@ export default {
 
             .card-img {
                 position: relative;
+                cursor: pointer;
             }
             .card-img:hover .img-hover{ 
                 display: block;

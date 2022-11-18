@@ -87,35 +87,52 @@ export const store = reactive({
           name: 'Privacy Policy',
           href: '/privacy-policy'
         },
+        {
+          name: '',
+          href: '/app-store',
+          img: '/app-store-badge-200x67.png'
+        },
+        {
+          name: '',
+          href: '/google-play',
+          img: '/play-store-badge-200x67.png'
+        },
       ],
       openingHoursLink: [
         {
-          name: 'Mon - 10AM to 11PM',
+          day: 'Mon',
+          hour: '- 10AM to 11PM',
           href: '/monday'
         },
         {
-          name: 'Tue - 10AM to 11PM',
+          day: 'Tue',
+          hour: '- 10AM to 11PM',
           href: '/tuesday'
         },
         {
-          name: 'Wed - 10AM to 11PM',
+          day: 'Wed',
+          hour: '- 10AM to 11PM',
           href: '/wednesday'
         },
         {
-          name: 'Thur - 10AM to 11PM',
+          day: 'Thur',
+          hour: '- 10AM to 11PM',
           href: '/thursday'
         },
         {
-          name: 'Fri - 10AM to 11PM',
+          day: 'Fri',
+          hour: '- 10AM to 11PM',
           href: '/'
         },
         {
-          name: 'Sat - 10AM to 11PM',
+          day: 'Sat',
+          hour: '- 10AM to 11PM',
           href: '/saturday'
         },
         {
-          name: 'Sun - 10AM to 11PM',
+          day: 'Sun',
+          hour: '- 10AM to 11PM',
           href: '/sunday'
         },
-      ]
+      ],
 })

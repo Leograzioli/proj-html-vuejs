@@ -31,6 +31,10 @@ a {
     color: inherit;
 } 
 
+.d-none {
+    display: none;
+}
+
 //buttons 
 .btn {
     padding: 0.7rem 1.3rem;
@@ -120,6 +124,10 @@ a {
 
 .justify-content-between {
     justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 //padding
