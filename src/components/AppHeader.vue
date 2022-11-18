@@ -30,10 +30,13 @@ export default {
                         <li 
                         class="ms-2" 
                         @click.prevent="$emit('clickedLink', item.id)" 
-                        :class="{'active': item.active, 'fa-solid fa-cart-shopping': item.class}" 
+                        :class="{'active': item.active}" 
                         v-for="(item, i) in links" :key="i"
                         >
-                            <a :href="item.href">{{ item.name }}</a>
+                            <a v-if="item.name" :href="item.href">{{ item.name }}</a>
+                            <a v-else :href="item.href">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -133,7 +136,6 @@ header {
     .ms_links li:hover {
         transition: color 0.5s;
         color: #fcdc31;
-        cursor: pointer;
     }
 
     .icons {

@@ -44,7 +44,6 @@ export default {
                 },
                 {
                     name: '',
-                    class: true,
                     href: '/home',
                     active: false,
                     id: 6
