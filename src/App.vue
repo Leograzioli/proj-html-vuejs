@@ -43,7 +43,8 @@ export default {
                     id: 5
                 },
                 {
-                    name: 'cart',
+                    name: '',
+                    class: true,
                     href: '/home',
                     active: false,
                     id: 6

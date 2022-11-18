@@ -3,6 +3,9 @@ export default {
     name: 'AppHeader',
     props: {
         links: Object,
+    }, 
+    computed: {
+        
     }
 }
 </script>
@@ -24,30 +27,37 @@ export default {
                 <!-- links -->
                 <nav class="ms_links ">
                     <ul class="d-flex align-items-center ms_color-white fw-bold">
-                        <li class="ms-2" @click.prevent="$emit('clickedLink', item.id)" :class="item.active? 'active' : ''" v-for="(item, i) in links" :key="i"><a :href="item.href">{{ item.name }}</a></li>
+                        <li 
+                        class="ms-2" 
+                        @click.prevent="$emit('clickedLink', item.id)" 
+                        :class="{'active': item.active, 'fa-solid fa-cart-shopping': item.class}" 
+                        v-for="(item, i) in links" :key="i"
+                        >
+                            <a :href="item.href">{{ item.name }}</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
 
             <!-- icons -->
             <div class="icons p-1">
-                <div class="plus mb-5"> 
+                <a href="#" class="plus mb-5">
                     <i class="fa-solid fa-plus"></i>
-                </div>
+                </a>
                 <div class="on-sale">
-                    <div class="square">
+                    <a href="#" class="square">
                         <div class="square-inner">
                             <i class="fa-solid fa-audio-description"></i>
                             <p>Demos</p>
                         </div>
-                    </div>
-                    <div class="square">
+                    </a>
+                    <a href="#" class="square">
                         <div class="square-inner">
                             <span class="dollar ms_color-green ms-05">$</span>
                             <span class="ms_fs-1 fw-bold ms_color-green ms-05">39</span>
                             <p>On Sale</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -120,6 +130,12 @@ header {
         color: #fcdc31;
     }
 
+    .ms_links li:hover {
+        transition: color 0.5s;
+        color: #fcdc31;
+        cursor: pointer;
+    }
+
     .icons {
         position: absolute;
         right: 0;
@@ -127,6 +143,7 @@ header {
         color: white;
 
         .plus {
+            display: inline-block;
             width: 50px;
             height: 50px;
             text-align: center;
