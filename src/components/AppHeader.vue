@@ -150,6 +150,11 @@ header {
             line-height: 50px;
             border-radius: 50%;
             background-color: #cc1a26;
+            transition: background-color 0.3s;
+        }
+
+        .plus:hover {
+            background-color: #ce4049;
         }
 
         .square {
