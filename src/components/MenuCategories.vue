@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section id="most-popular">
+    <section id="menu-categories">
         <div class="container">
 
             <!-- title and button -->

@@ -1,6 +1,32 @@
 <script>
 export default {
-    name: 'MostPopular'
+    name: 'MostPopular',
+    data() {
+        return {
+            popularDishes: [
+                {
+                    name: 'Skin On Fries',
+                    price: '$3.00 - $6.00',
+                    img: '/skin-on-fries-400x571.jpg'
+                },
+                {
+                    name: 'Choco Cookie Frappe',
+                    price: '$4.99',
+                    img: '/choco-cookie-frappe-400x571.jpg'
+                },
+                {
+                    name: 'The Donut burger',
+                    price: '$6.99',
+                    img: '/donut-burger-400x571.jpg'
+                }
+            ],
+        }
+    },
+    methods: {
+        getPathImg(url) {
+            return new URL(`../assets`+ url, import.meta.url).href;
+        }
+    }
 }
 </script>
 
@@ -9,43 +35,32 @@ export default {
         <div class="container">
             <!-- section title -->
             <h2 class="ms_fs-3 mb-5">Our Most Popular Dishes</h2>
-            <div class="row">
+            <div class="row mb-5">
 
                 <!-- col -->
-                <div class="col">
+                <div v-for="(item, i) in popularDishes" :key="i" class="col">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="../assets/skin-on-fries-400x571.jpg" alt="Skin On Fries">
-                        </div>
-                        <div class="card-txt">
-                            <h2 class="ms_fs-2 ms_color-blue mt-1">Skin On Fries</h2>
-                            <p class="mt-1 ms_color-red ms_fs-05">$3.00 - $6.00</p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- col -->
-                <div class="col">
-                    <div class="card">
+                        <!-- card image -->
                         <div class="card-img">
-                            <img src="../assets/choco-cookie-frappe-400x571.jpg" alt="">
-                        </div>
-                        <div class="card-txt">
-                            <h2 class="ms_fs-2 ms_color-blue mt-1">Choco Cookie Frappe</h2>
-                            <p class="mt-1 ms_color-red ms_fs-05">$4.99</p>
-                        </div>
-                    </div>
-                </div>
+                            <img :src="getPathImg(item.img)" alt="Skin On Fries">
 
-                <!-- col -->
-                <div class="col mb-5">
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="../assets/donut-burger-400x571.jpg" alt="">
+                            <!-- hover -->
+                            <div class="img-hover">
+                                <div class="icon">
+                                    <i class="fa-regular fa-square"></i>
+                                    <i class="absolute fa-solid fa-check"></i>
+                                </div>
+                                <div class="txt fw-bold">
+                                    <p>View Cart</p>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- card text -->
                         <div class="card-txt">
-                            <h2 class="ms_fs-2 ms_color-blue mt-1">The Donut burger</h2>
-                            <p class="mt-1 ms_color-red ms_fs-05">$6.99</p>
+                            <h2 class="ms_fs-2 ms_color-blue mt-1">{{ item.name }}</h2>
+                            <p class="mt-1 ms_color-red ms_fs-05">{{ item.price }}</p>
                         </div>
                     </div>
                 </div>
@@ -87,6 +102,40 @@ export default {
 
         .col {
             width: calc(100% / 3);
+
+            .card-img {
+                position: relative;
+            }
+            .card-img:hover .img-hover{ 
+                display: block;
+            }
+            .img-hover {
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+
+                .icon {
+                    position: relative;
+                    text-align: center;
+                    margin: 0 auto 1rem;
+                    width: 70px;
+                    height: 70px;
+                    line-height: 70px;
+                    border-radius: 50%;
+                    background-color: rgba(0, 0, 0, 0.7);
+
+                    .absolute {
+                        position: absolute;
+                        top: 48%;
+                        left: 55%;
+                        transform: translate(-50%, -50%);
+                        font-size: 1.2rem;
+                    }
+                }
+            }
         }
     }
 }
@@ -101,13 +150,14 @@ export default {
         filter: opacity(0.1);
 
     }
+
     .first {
         top: 45px;
         transform: translate(-60px);
     }
 
     .second {
-        top: 05px;  
+        top: 05px;
         transform: translate(-10px);
     }
 
@@ -115,7 +165,7 @@ export default {
         top: -35px;
         transform: translate(-30px);
     }
-    
+
 
     img {
         position: absolute;

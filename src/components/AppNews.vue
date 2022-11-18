@@ -72,5 +72,18 @@ section {
     p {
         line-height: 1.5rem;
     }
+
+    .card-img {
+        height: 100%;
+        background-color: black;
+        
+        img {
+            display: block;
+            transition: filter 0.5s;
+        }
+    }
+    .card-img img:hover {
+       filter: opacity(0.5);
+    }
 }
 </style>
