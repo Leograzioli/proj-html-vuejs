@@ -45,8 +45,12 @@ a {
     letter-spacing: 3px;
     display: inline-block;
     font-weight: bold;
+    transition: transform 0.3s;
 }
 
+.btn:hover {
+    transform: translate(2px, 2px);
+}
 //colors
 
 .ms_color-white {
