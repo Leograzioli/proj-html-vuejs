@@ -28,7 +28,7 @@ export default {
             </a> 
 
             <!-- if by image -->
-            <a v-else href="">
+            <a v-else :href="item.href">
                 <img class="img-detail" :src="getPathImg(item.img)" :alt="item.href">
             </a>
         </li>

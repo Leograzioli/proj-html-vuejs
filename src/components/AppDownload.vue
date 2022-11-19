@@ -11,12 +11,15 @@ export default {
                 <p class="ms_fs-3 fw-semibold">Download Our</p>
                 <p class="ms_color-yellow ms_fs-5 fw-bold mb-5">Ordering App</p>
                 <div class="store d-flex">
+
+                    <!-- apple store -->
                     <a href="">
-                        <img src="../assets/app-store-badge.png" alt="">
+                        <img src="../assets/app-store-badge.png" alt="apple store">
                     </a>
 
+                    <!-- google play -->
                     <a href="">
-                        <img src="../assets/play-store-badge.png" alt="">
+                        <img src="../assets/play-store-badge.png" alt="google play store">
                     </a>
                 </div>
             </div>

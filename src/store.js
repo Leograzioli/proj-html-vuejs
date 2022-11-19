@@ -135,4 +135,48 @@ export const store = reactive({
           href: '/sunday'
         },
       ],
+      socialIcons: [
+        {
+          name: 'Facebook',
+          href: '/facebook',
+          iconClass: 'fa-brands fa-facebook-f',
+          tag: 'fb'
+        },
+        {
+          name: 'Twitter',
+          href: '/twitter',
+          iconClass: 'fa-brands fa-twitter',
+          tag: 'tw'
+        },
+        {
+          name: 'Instagram',
+          href: '/instagram',
+          iconClass: 'fa-brands fa-instagram',
+          tag: 'insta'
+        },
+        {
+          name: 'Linkedin',
+          href: '/linkedin',
+          iconClass: 'fa-brands fa-linkedin-in',
+          tag: 'in'
+        },
+        {
+          name: 'Rss',
+          href: '/rss',
+          iconClass: 'fa-solid fa-rss',
+          tag: 'rss'
+        },
+        {
+          name: 'Youtube',
+          href: '/youtube',
+          iconClass: 'fa-brands fa-youtube',
+          tag: 'yt'
+        },
+        {
+          name: 'Email',
+          href: '/femail',
+          iconClass: 'fa-regular fa-envelope',
+          tag: 'mail'
+        },
+      ]
 })
