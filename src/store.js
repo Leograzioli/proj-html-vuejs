@@ -178,5 +178,56 @@ export const store = reactive({
           iconClass: 'fa-regular fa-envelope',
           tag: 'mail'
         },
+      ],
+      menuCategories: [
+        {
+          name: 'APPETIZERS',
+          img: '/appetizers-menu-background.jpg',
+        },
+        {
+          name: 'BURGERS',
+          img: '/burgers-menu-background.jpg',
+        },
+        {
+          name: 'PIZZAS',
+          img: '/pizza-menu-background.jpg',
+        },
+        {
+          name: 'FRIES',
+          img: '/fries-menu-background.jpg',
+        },
+        {
+          name: 'SIDES',
+          img: '/sides-menu-background.jpg',
+        },
+        {
+          name: 'DESSERTS',
+          img: '/desserts-menu-background.jpg',
+        },
+        {
+          name: 'BEVERAGES',
+          img: '/beverages-menu-background.jpg',
+        },
+        {
+          name: 'SPECIALS',
+          img: '/specials-menu-background.jpg',
+        },
+        {
+          name: 'Vegetarian',
+          class: 'fa-solid fa-seedling ms_color-dgreen'
+        },
+        {
+          name: 'Gluten Free',
+          class: 'fa-solid fa-wheat-awn ms_color-yellow'
+        },
+        {
+          name: 'Dairy Free',
+          class: 'fa-solid fa-bottle-droplet ms_color-lblue'
+        },
+        {
+          name: 'Keto Friendly',
+          class: 'fa-solid fa-drumstick-bite ms_color-brown'
+        },
       ]
+
 })

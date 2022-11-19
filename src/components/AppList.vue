@@ -5,31 +5,31 @@ export default {
         links: Object
     },
     methods: {
-        
+
         getPathImg(url) {
-            return new URL(`../assets`+ url, import.meta.url).href;
+            return new URL(`../assets` + url, import.meta.url).href;
         }
     }
 }
 </script>
 
 <template>
-    <ul >
-        <li v-for="(item, i) in links" :key="i" :class="item.name? '' : 'lh-1'">
+    <ul>
+        <li :class="links.name ? '' : 'lh-1'">
 
             <!-- if by name -->
-            <a v-if="item.name" :href="item.href">
-                {{ item.name }}
+            <a v-if="links.name" :href="links.href">
+                {{ links.name }}
             </a>
 
             <!-- if by day -->
-            <a v-else-if="item.day" :href="item.href">
-                {{ item.day }} <span class="ms_color-yellow">{{ item.hour }}</span>
-            </a> 
+            <a v-else-if="links.day" :href="links.href">
+                {{ links.day }} <span class="ms_color-yellow">{{ links.hour }}</span>
+            </a>
 
             <!-- if by image -->
-            <a v-else :href="item.href">
-                <img class="img-detail" :src="getPathImg(item.img)" :alt="item.href">
+            <a v-else :href="links.href">
+                <img class="img-detail" :src="getPathImg(links.img)" :alt="links.href">
             </a>
         </li>
     </ul>
@@ -55,7 +55,8 @@ ul {
     }
 
     li:hover {
-        color: #fcdc31;;
+        color: #fcdc31;
+        ;
     }
 }
 </style>

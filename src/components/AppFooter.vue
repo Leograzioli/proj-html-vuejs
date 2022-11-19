@@ -23,25 +23,25 @@ export default {
                 <!-- order online col -->
                 <div class="col">
                     <h4>ORDER ONLINE</h4>
-                    <AppList :links="store.orderOnlineLinks" />
+                    <AppList v-for="(item, i) in store.orderOnlineLinks" :key="i" :links="item" />
                 </div>
 
                 <!-- navigate col -->
                 <div class="col">
                     <h4>NAVIGATE</h4>
-                    <AppList :links="store.navigateLinks" />
+                    <AppList v-for="(item, i) in store.navigateLinks" :key="i" :links="item" />
                 </div>
 
                 <!-- information col -->
                 <div class="col info">
                     <h4>INFORMATION</h4>
-                    <AppList :links="store.informationLinks" />
+                    <AppList v-for="(item, i) in store.informationLinks" :key="i" :links="item"/>
                 </div>
 
                 <!-- opening hours col -->
                 <div class="col">
                     <h4>OPENING HOURS</h4>
-                    <AppList :links="store.openingHoursLink" />
+                    <AppList v-for="(item, i) in store.openingHoursLink" :key="i"  :links="item" />
                 </div>
 
                 <!-- voucher col -->
