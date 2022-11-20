@@ -153,18 +153,17 @@ export default {
     }
 
     .first {
-        top: 45px;
-        transform: translate(-60px);
+        top: 8px;
+        transform: rotate(2deg);     
     }
 
     .second {
-        top: 05px;
-        transform: translate(-10px);
+        top: -35px;       
     }
 
     .third {
-        top: -35px;
-        transform: translate(-30px);
+        top: -55px;
+        transform: rotate(2deg);        
     }
 
 
