@@ -29,7 +29,7 @@ export default {
                     <ul class="d-flex align-items-center ms_color-white fw-bold">
                         <li 
                         class="ms-2" 
-                        @click.prevent="$emit('clickedLink', item.id)" 
+                        @click="$emit('clickedLink', item.id)" 
                         :class="{'active': item.active}" 
                         v-for="(item, i) in links" :key="i"
                         >

@@ -32,7 +32,7 @@ export default {
                 },
                 {
                     name: 'News',
-                    href: '/news',
+                    href: '#news',
                     active: false,
                     id: 4
                 },

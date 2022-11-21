@@ -146,19 +146,21 @@ export default {
     background-image: url('../assets/first-order-background-scaled.jpg');
     background-size: cover;
     height: 530px;
+    width: 100%;
+    overflow-x: hidden;
 
     .blur {
-        filter: opacity(0.1);
-
+        filter: opacity(0.2);
     }
 
     .first {
         top: 8px;
-        transform: rotate(2deg);     
+        transform: rotate(2deg);
     }
 
     .second {
-        top: -35px;       
+        top: -35px;
+        transform: rotate(1deg);   
     }
 
     .third {
@@ -166,11 +168,9 @@ export default {
         transform: rotate(2deg);        
     }
 
-
     img {
         position: absolute;
         top: -95px;
     }
-
 }
 </style>

@@ -56,7 +56,6 @@ ul {
 
     li:hover {
         color: #fcdc31;
-        ;
     }
 }
 </style>
