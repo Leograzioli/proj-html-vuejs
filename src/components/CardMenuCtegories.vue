@@ -49,6 +49,10 @@ export default {
     }
 }
 
+.card:hover img{
+    filter: opacity(0.8);
+}
+
 .card-icon {
     text-align: center;
     max-height: 210px;

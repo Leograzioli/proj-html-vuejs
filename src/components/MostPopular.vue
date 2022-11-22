@@ -106,9 +106,17 @@ export default {
             .card-img {
                 position: relative;
                 cursor: pointer;
+                background-color: black;
+                img {
+                    display: block;
+                }
             }
-            .card-img:hover .img-hover{ 
+            .card:hover .img-hover{ 
                 display: block;
+            }
+
+            .card:hover img {
+                opacity: 0.6;
             }
             .img-hover {
                 display: none;
