@@ -18,14 +18,14 @@ export default {
         <li v-for="(item, i) in links" :key="i"  :class="item.name ? '' : 'lh-1'">
 
             <!-- if by name -->
-            <a v-if="item.name" :href="item.href">
+            <a v-if="item.name" :href="item.href" :class="item.class">
                 {{ item.name }}
             </a>
 
             <!-- if by day -->
-            <a v-else-if="item.day" :href="item.href">
+            <p v-else-if="item.day" >
                 {{ item.day }} <span class="ms_color-yellow">{{ item.hour }}</span>
-            </a>
+            </p>
 
             <!-- if by image -->
             <a v-else :href="item.href">

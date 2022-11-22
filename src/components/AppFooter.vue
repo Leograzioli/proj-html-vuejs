@@ -86,7 +86,7 @@ export default {
                         <ul class="icons mb-3 d-flex justify-center">
                             <li v-for="(icon, i) in store.socialIcons" :key="i">
                                 <a :href="icon.href" :class="icon.tag">
-                                    <abbr :title="icon.name"><i :class="icon.iconClass"></i></abbr>
+                                    <i :title="icon.name" :class="icon.iconClass"></i>
                                 </a>
                             </li>
                         </ul>

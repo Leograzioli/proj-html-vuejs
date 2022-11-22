@@ -51,7 +51,8 @@ export const store = reactive({
         },
         {
           name: 'Alternate Home',
-          href:'/alternate-home'
+          href:'/alternate-home',
+          class: 'ms_color-red'
         },
         {
           name: 'Menu',
