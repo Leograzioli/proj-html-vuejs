@@ -24,7 +24,7 @@ export default {
     },
     methods: {
         getPathImg(url) {
-            return new URL(`../assets`+ url, import.meta.url).href;
+            return new URL(`../assets` + url, import.meta.url).href;
         }
     }
 }
@@ -103,18 +103,18 @@ export default {
         .col {
             width: calc(100% / 3);
 
-            
-            
             .card-img {
                 position: relative;
                 cursor: pointer;
                 background-color: black;
+
                 img {
                     display: block;
                     transition: opacity 0.5s;
                 }
             }
-            .card:hover .img-hover{ 
+
+            .card:hover .img-hover {
                 opacity: 1;
             }
 
@@ -122,9 +122,6 @@ export default {
                 opacity: 0.6;
             }
 
-            .card-text:hover h2 {
-                color: #cc1a26;
-            }
             .img-hover {
                 opacity: 0;
                 transition: opacity 0.5s;
@@ -176,12 +173,12 @@ export default {
 
     .second {
         top: -35px;
-        transform: rotate(1deg);   
+        transform: rotate(1deg);
     }
 
     .third {
         top: -55px;
-        transform: rotate(2deg);        
+        transform: rotate(2deg);
     }
 
     img {
