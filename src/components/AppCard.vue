@@ -17,7 +17,7 @@ export default {
 
         <!-- card image -->
         <div class="card-img">
-            <img :src="getPathImg(item.img)" alt="Skin On Fries">
+            <img :src="getPathImg(item.img)" :alt="item.name">
 
             <!-- hover -->
             <div v-if="item.price" class="img-hover">

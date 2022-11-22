@@ -139,9 +139,10 @@ header {
     }
 
     .icons {
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
+        z-index: 999;
         color: white;
 
         .plus {
@@ -168,6 +169,7 @@ header {
             color:#33475b;
             background-color: white;
             margin-bottom: 0.3rem;
+            box-shadow: 0 0 10px 1px black;
 
             display: flex;
             align-items: center;
