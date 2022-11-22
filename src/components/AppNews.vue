@@ -54,11 +54,5 @@ section {
         column-gap: 2.5rem;
 
     }
-
-    p {
-        line-height: 1.5rem;
-    }
-
-
 }
 </style>
