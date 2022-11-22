@@ -103,23 +103,31 @@ export default {
         .col {
             width: calc(100% / 3);
 
+            
+            
             .card-img {
                 position: relative;
                 cursor: pointer;
                 background-color: black;
                 img {
                     display: block;
+                    transition: opacity 0.5s;
                 }
             }
             .card:hover .img-hover{ 
-                display: block;
+                opacity: 1;
             }
 
             .card:hover img {
                 opacity: 0.6;
             }
+
+            .card-text:hover h2 {
+                color: #cc1a26;
+            }
             .img-hover {
-                display: none;
+                opacity: 0;
+                transition: opacity 0.5s;
                 position: absolute;
                 top: 50%;
                 left: 50%;

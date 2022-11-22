@@ -72,4 +72,8 @@ export default {
         font-size: 1.3rem;
     }
 }
+
+.card-icon:hover i{
+    filter: brightness(1.5);
+}
 </style>

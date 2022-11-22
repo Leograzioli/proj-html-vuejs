@@ -10,6 +10,7 @@
 html {
     font-family: 'Barlow', sans-serif;
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 //COMMON
 .container {
@@ -49,7 +50,7 @@ a {
 }
 
 .btn:hover {
-    transform: translate(2px, 2px);
+    background-color: darken($color: #cc1a26, $amount: 20)
 }
 //colors
 
