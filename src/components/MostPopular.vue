@@ -1,6 +1,10 @@
 <script>
+import AppCard from './AppCard.vue';
 export default {
     name: 'MostPopular',
+    components: {
+        AppCard,
+    },
     data() {
         return {
             popularDishes: [
@@ -34,35 +38,12 @@ export default {
     <section id="most-popular">
         <div class="container">
             <!-- section title -->
-            <h2 class="ms_fs-3 mb-5">Our Most Popular Dishes</h2>
+            <h2 class="ms_fs-3 mb-5 text-center">Our Most Popular Dishes</h2>
             <div class="row mb-5">
 
                 <!-- col -->
                 <div v-for="(item, i) in popularDishes" :key="i" class="col">
-                    <div class="card">
-
-                        <!-- card image -->
-                        <div class="card-img">
-                            <img :src="getPathImg(item.img)" alt="Skin On Fries">
-
-                            <!-- hover -->
-                            <div class="img-hover">
-                                <div class="icon">
-                                    <i class="fa-regular fa-square"></i>
-                                    <i class="absolute fa-solid fa-check"></i>
-                                </div>
-                                <div class="txt fw-bold">
-                                    <p>View Cart</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- card text -->
-                        <div class="card-txt">
-                            <h2 class="ms_fs-2 ms_color-blue mt-1">{{ item.name }}</h2>
-                            <p class="mt-1 ms_color-red ms_fs-05">{{ item.price }}</p>
-                        </div>
-                    </div>
+                    <AppCard :item="item" />
                 </div>
             </div>
 
@@ -88,12 +69,6 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-
-    h2,
-    p {
-        text-align: center;
-    }
-
     .row {
         display: flex;
         justify-content: space-between;
@@ -102,54 +77,6 @@ export default {
 
         .col {
             width: calc(100% / 3);
-
-            .card-img {
-                position: relative;
-                cursor: pointer;
-                background-color: black;
-
-                img {
-                    display: block;
-                    transition: opacity 0.5s;
-                }
-            }
-
-            .card:hover .img-hover {
-                opacity: 1;
-            }
-
-            .card:hover img {
-                opacity: 0.6;
-            }
-
-            .img-hover {
-                opacity: 0;
-                transition: opacity 0.5s;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-
-                .icon {
-                    position: relative;
-                    text-align: center;
-                    margin: 0 auto 1rem;
-                    width: 70px;
-                    height: 70px;
-                    line-height: 70px;
-                    border-radius: 50%;
-                    background-color: rgba(0, 0, 0, 0.7);
-
-                    .absolute {
-                        position: absolute;
-                        top: 48%;
-                        left: 55%;
-                        transform: translate(-50%, -50%);
-                        font-size: 1.2rem;
-                    }
-                }
-            }
         }
     }
 }

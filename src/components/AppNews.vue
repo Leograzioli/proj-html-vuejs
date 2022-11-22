@@ -1,6 +1,27 @@
 <script>
+import AppCard from './AppCard.vue';
 export default {
-    name: 'AppNews'
+    name: 'AppNews',
+    components: {
+        AppCard
+    },
+    data () {
+        return {
+            newProducts: [
+                {
+                    name: 'NEW: The Pancake Burger',
+                    img: '/pancake-burger-600x450.jpg',
+                    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, maiores? Aliquid blanditiis modi, consectetur commodi eligendi recusandae provident nobis placeat perspiciatis non nihil'
+                },
+                {
+                    name: 'New Milkshake Menu',
+                    img: '/new-milkshake-menu-600x450.jpg',
+                    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, maiores? Aliquid blanditiis modi, consectetur commodi eligendi recusandae provident nobis placeat perspiciatis non nihil'
+                },
+
+            ]
+        }
+    }
 }
 </script>
 
@@ -17,43 +38,8 @@ export default {
             <div class="row d-flex">
 
                 <!-- col -->
-                <div class="col">
-                    <div class="card">
-
-                        <!-- image card -->
-                        <div class="card-img mb-3">
-                            <img src="../assets/pancake-burger-600x450.jpg" alt="">
-                        </div>
-
-                        <!-- text card -->
-                        <div class="card-txt text-center">
-                            <h2 class="mb-1 ms_color-blue ms_fs-3">NEW: The Pancake Burger</h2>
-                            <p class="ms_color-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae,
-                                maiores? Aliquid blanditiis modi, consectetur commodi eligendi recusandae provident
-                                nobis placeat perspiciatis non nihil
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- col -->
-                <div class="col">
-                    <div class="card">
-
-                        <!-- image card -->
-                        <div class="card-img mb-3">
-                            <img src="../assets/new-milkshake-menu-600x450.jpg" alt="">
-                        </div>
-
-                        <!-- text card -->
-                        <div class="card-txt text-center">
-                            <h2 class="mb-1 ms_color-blue ms_fs-3">New Milkshake Menu</h2>
-                            <p class="ms_color-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae,
-                                maiores? Aliquid blanditiis modi, consectetur commodi eligendi recusandae provident
-                                nobis placeat perspiciatis non nihil
-                            </p>
-                        </div>
-                    </div>
+                <div v-for="(item, i) in newProducts" :key="i" class="col">
+                    <AppCard :item="item"/>
                 </div>
             </div>
         </div>
@@ -73,17 +59,6 @@ section {
         line-height: 1.5rem;
     }
 
-    .card-img {
-        height: 100%;
-        background-color: black;
-        
-        img {
-            display: block;
-            transition: filter 0.5s;
-        }
-    }
-    .card-img img:hover {
-       filter: opacity(0.5);
-    }
+
 }
 </style>

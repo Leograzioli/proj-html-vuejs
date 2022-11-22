@@ -229,5 +229,4 @@ export const store = reactive({
           class: 'fa-solid fa-drumstick-bite ms_color-brown'
         },
       ]
-
 })
