@@ -14,7 +14,7 @@ export default {
 
                     <!-- apple store -->
                     <a href="">
-                        <img src="/public/assetsapp-store-badge.png" alt="apple store">
+                        <img src="/public/assets/app-store-badge.png" alt="apple store">
                     </a>
 
                     <!-- google play -->
