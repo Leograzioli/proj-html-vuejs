@@ -20,7 +20,7 @@ export default {
                 <!-- logo -->
                 <div class="ms_logo">
                     <a href="">
-                        <img src="../assets/takeout-logo.png" alt="">
+                        <img src="/public/assets/takeout-logo.png" alt="">
                     </a>
                 </div>
 
@@ -114,7 +114,7 @@ export default {
 header {
     position: relative;
 
-    background-image: url('../assets//home-background-hero-scaled.jpg');
+    background-image: url('/public/assets/home-background-hero-scaled.jpg');
     background-size: cover;
     background-position: bottom;
     height: 1000px;

@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         getPathImg(url) {
-            return new URL(`../assets` + url, import.meta.url).href;
+            return new URL(`/public/assets` + url, import.meta.url).href;
         }
     }
 }
@@ -58,10 +58,10 @@ export default {
         <!-- bottom image -->
         <div class="ct-images">
             <div class="bg-image">
-                <img src="../assets/svg-0.svg" alt="">
-                <img class="blur first" src="../assets/svg-0.svg" alt="">
-                <img class="blur second" src="../assets/svg-0.svg" alt="">
-                <img class="blur third" src="../assets/svg-0.svg" alt="">
+                <!-- <img src="/public/assets/svg-0.svg" alt="">
+                <img class="blur first" src="/public/assets/svg-0.svg" alt="">
+                <img class="blur second" src="/public/assets/svg-0.svg" alt="">
+                <img class="blur third" src="/public/assets/svg-0.svg" alt=""> -->
             </div>
         </div>
     </section>

@@ -14,12 +14,12 @@ export default {
 
                     <!-- apple store -->
                     <a href="">
-                        <img src="../assets/app-store-badge.png" alt="apple store">
+                        <img src="/public/assetsapp-store-badge.png" alt="apple store">
                     </a>
 
                     <!-- google play -->
                     <a href="">
-                        <img src="../assets/play-store-badge.png" alt="google play store">
+                        <img src="/public/assets/play-store-badge.png" alt="google play store">
                     </a>
                 </div>
             </div>
@@ -29,7 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    background-image: url('../assets/app-ordering-scaled.jpg');
+    background-image: url('/public/assets/app-ordering-scaled.jpg');
     background-size: cover;
 
     .order-app {
