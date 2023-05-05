@@ -1,4 +1,5 @@
 <script>
+import prova from '/assets/app-store-badge.png'
 export default {
     name: 'AppDownload'
 }
@@ -14,13 +15,14 @@ export default {
 
                     <!-- apple store -->
                     <a href="">
-                        <img src="/public/assets/app-store-badge.png" alt="apple store">
+                        <img :src={prova} alt="apple store">
                     </a>
 
                     <!-- google play -->
                     <a href="">
-                        <img src="/public/assets/play-store-badge.png" alt="google play store">
+                        <img src="assets/play-store-badge.png" alt="google play store">
                     </a>
+                    
                 </div>
             </div>
         </div>
@@ -29,7 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    background-image: url('/public/assets/app-ordering-scaled.jpg');
+    background-image: url('assets/app-ordering-scaled.jpg');
     background-size: cover;
 
     .order-app {
