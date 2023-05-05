@@ -6,7 +6,7 @@ export default {
     },
     methods: {
         getPathImg(url) {
-            return new URL(`/public/assets` + url, import.meta.url).href;
+            return new URL(`/assets` + url, import.meta.url).href;
         }
     }
 }

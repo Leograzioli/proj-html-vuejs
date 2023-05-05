@@ -47,7 +47,7 @@ export default {
                 <!-- voucher col -->
                 <div class="col voucher text-center">
                     <h4>VOUCHER</h4>
-                    <img src="/public/assets/footer-coupon-200x200.png" alt="">
+                    <img src="/assets/footer-coupon-200x200.png" alt="">
 
                     <div class="txt">
                         <p>Just Use The Code</p>
@@ -62,7 +62,7 @@ export default {
 
                     <!-- footer logo -->
                     <div class="footer-logo mb-2">
-                        <img src="/public/assets/takeout-logo.png" alt="">
+                        <img src="/assets/takeout-logo.png" alt="">
                     </div>
 
                     <!-- text -->
